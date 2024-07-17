@@ -17,3 +17,7 @@
   background-color: rgba(0, 0, 0, 0.5); /* Adjust the alpha value to control darkness */
   z-index: -1; /* Ensure the pseudo-element is behind the content */
 }
+
+.center-abs {
+  transform: translateX(-50%) translateY(-50%);
+}
