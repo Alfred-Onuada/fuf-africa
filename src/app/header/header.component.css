@@ -1,0 +1,9 @@
+.nav-active {
+  color: black;
+}
+.t-shadow {
+  text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+}
+.donate-btn {
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+}
