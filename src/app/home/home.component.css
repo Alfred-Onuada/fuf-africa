@@ -1,0 +1,35 @@
+.first-section {
+  position: relative;
+  z-index: 0;
+  background-image: url(./../../../public/IMG_1015.JPG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.first-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the alpha value to control darkness */
+  z-index: -1; /* Ensure the pseudo-element is behind the content */
+}
+
+.overlay::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the alpha value to control darkness */
+  z-index: 1; /* Ensure the pseudo-element is behind the content */
+  border-radius: 20px;
+}
+
+.center-abs {
+  transform: translateX(-50%) translateY(-50%);
+}
