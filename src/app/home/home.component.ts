@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterLink, RouterOutlet } from '@angular/router';
 import { HeaderComponent } from "./../header/header.component";
 import { FooterComponent } from "./../footer/footer.component";
 import { Title } from '@angular/platform-browser';
@@ -9,7 +9,7 @@ import { ChartData } from 'chart.js';
 @Component({
   selector: 'fuf-home',
   standalone: true,
-  imports: [RouterOutlet, HeaderComponent, FooterComponent, BaseChartDirective],
+  imports: [RouterOutlet, HeaderComponent, FooterComponent, BaseChartDirective, RouterLink],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })

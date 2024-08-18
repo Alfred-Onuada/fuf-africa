@@ -1,0 +1,73 @@
+<fuf-header></fuf-header>
+
+<div class="p-16 bg-[#FCEDC6]">
+  <div class="flex items-start">
+    <div class="flex items-center mb-5">
+      <div class="bg-[#1D2130] h-[2px] w-[72px] mr-[20px]"></div>
+    </div>
+    <div class="mr-20 max-w-[500px]">
+      <h4 class="text-[#1D2130] font-bold text-[16px] mb-6 leading-[0]">DONATE</h4>
+      <h4 class="font-bold text-[40px] mb-5 text-[#1D2130]">Making a donation for our children.</h4>
+      <p class="mb-10 text-[16px] font-light text-[#1D2130]">When you donate, you're supporting effective care to children with special needs—an investment in the leaders of tomorrow.</p>
+      <button class="rounded-md bg-[#F2C94C] text-black text-[16px] font-medium px-[24px] py-[10px] mr-10" routerLink="/donate">Donate now</button>
+    </div>
+    <div class="w-[100%] flex-row flex justify-end">
+      <img class="w-[480px] h-[384px] object-cover rounded-md" src="donate.jpg" alt="donation image">
+    </div>
+  </div>
+</div>
+
+<div class="p-16 justify-center items-center">
+  <div class="grid grid-cols-2 gap-x-20">
+    <div>
+      <h4 class="font-bold text-[48px] leading-tight mb-5 m-0">How you can contribute to caring for our kids</h4>
+      <p class="font-light text-[16px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+    </div>
+    <div class="w-fit">
+      <div class="grid grid-cols-3 mb-2">
+        <h4 class="text-center px-5" (click)="section = 'overview'">Overview</h4>
+        <h4 class="text-center px-5" (click)="section = 'impact'">Impact</h4>
+        <h4 class="text-center px-5" (click)="section = 'what you get'">What You Get</h4>
+      </div>
+      <div class="relative">
+        <div class="w-[100%] h-[1px] bg-[#E5E5E5]"></div>
+        <div class="w-[33.333%] h-[2px] bg-[#F9CF64] absolute top-0 slow" [ngClass]="{'left-0': section == 'overview', 'left-[33.33333%]': section == 'impact', 'left-[66.66666%]': section == 'what you get'}"></div>
+      </div>
+      <div class="mt-5">
+        @if (section == 'overview') {
+          <p class="font-light text-[16px] absolute">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. <br><br>
+            Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.
+          </p>
+        } @else if (section == 'impact') {
+          <p class="font-light text-[16px] absolute">
+            adkpaidwrnro35 fsf3rv Louspendisse vafadosfwre2e cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. <br><br>
+            Aenean faucibus nibh et justo cursus id rutrmk24 wori2oe.
+          </p>
+        } @else {
+          <p class="font-light text-[16px] absolute">
+            qqre lore wirminpd sjfdsf em imperdiet. Nunc ut sem vitae risus tristique posuere.
+          </p>
+        }
+      </div>
+    </div>
+  </div>
+  <div class="my-20 w-[100%] h-[1px] bg-[#E5E5E5]"></div>
+  <div class="grid grid-cols-3 gap-x-20 mb-20">
+    <h4 class="font-bold text-[48px] leading-tight m-0">How we use your donation</h4>
+    <p class="font-light text-[16px]">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur libero aliquid atque maiores sequi et dolorum repellat minus, quos optio illo quam est vero, nulla consectetur voluptatum? Provident, atque quaerat?</p>
+    <p class="font-light text-[16px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur dicta ullam sequi eligendi esse officia harum. Delectus impedit voluptas quisquam deleniti tempora temporibus, maiores modi natus, repellat soluta, non fuga?</p>
+  </div>
+  <div class="relative w-[100%] h-fit overlay">
+    <img src="left-1.JPG" alt="An image of happy kids" class="w-[100%] h-[384px] object-cover rounded-lg">
+    <div class="absolute top-[50%] left-[50%] center-abs z-[2] w-[70%]">
+      <h4 class="font-bold text-white text-[48px] text-center leading-tight mb-10">You can contribute to provide a place for children with special needs!</h4>
+      <div class="flex justify-center">
+        <button class="rounded-md bg-[#F2C94C] text-black text-[16px] font-medium px-[32px] py-[16px] mr-10">Join as a volunteer</button>
+        <button class="rounded-md bg-white text-black text-[16px] font-medium px-[32px] py-[16px] mr-10" routerLink="/donate">Donate</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<fuf-footer></fuf-footer>
