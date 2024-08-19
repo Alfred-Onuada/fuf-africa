@@ -1,0 +1,96 @@
+<fuf-header></fuf-header>
+
+<div class="p-16 bg-[#FCEDC6]">
+  <div class="flex items-start">
+    <div class="flex items-center mb-5">
+      <div class="bg-[#1D2130] h-[2px] w-[72px] mr-[20px]"></div>
+    </div>
+    <div class="mr-20 max-w-[500px]">
+      <h4 class="text-[#1D2130] font-bold text-[16px] mb-6 leading-[0]">TOP NEWS</h4>
+      <h4 class="font-bold text-[40px] mb-5 text-[#1D2130]">Our goal is to provide inclusive care for children with special needs</h4>
+      <p class="mb-10 text-[16px] font-light text-[#1D2130]">Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+      <button class="rounded-md bg-[#F2C94C] text-black text-[16px] font-medium px-[24px] py-[10px] mr-10">Read More</button>
+    </div>
+    <div class="w-[100%] flex-row flex justify-end">
+      <div class="bg-white rounded-md p-6 max-w-[550px]">
+        <div class="flex mb-3">
+          <img class="h-[160px] w-[192px] rounded-md mr-3" src="autism.jpeg" alt="picture">
+          <div>
+            <h4 class="font-bold text-[20px] m-0">Autism care day</h4>
+            <h6 class="font-bold text-[14px] text-[#C7C7CB] my-2">15th Nov 2022</h6>
+            <p class="m-0 font-light text-[16px] text-[#525560]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis numquam</p>
+          </div>
+        </div>
+        <div class="flex mb-3">
+          <img class="h-[160px] w-[192px] rounded-md mr-3" src="down-syndrome.jpeg" alt="picture">
+          <div>
+            <h4 class="font-bold text-[20px] m-0">Down syndrome outreach</h4>
+            <h6 class="font-bold text-[14px] text-[#C7C7CB] my-2">15th Nov 2022</h6>
+            <p class="m-0 font-light text-[16px] text-[#525560]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis numquam</p>
+          </div>
+        </div>
+        <div class="flex">
+          <img class="h-[160px] w-[192px] rounded-md mr-3" src="palsy.jpeg" alt="picture">
+          <div>
+            <h4 class="font-bold text-[20px] m-0">Caring for children with cerebral palsy</h4>
+            <h6 class="font-bold text-[14px] text-[#C7C7CB] my-2">15th Nov 2022</h6>
+            <p class="m-0 font-light text-[16px] text-[#525560]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis numquam</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="px-16 py-24 justify-center items-center">
+  <div class="relative w-[100%] h-fit overlay">
+    <img src="left-1.JPG" alt="An image of happy kids" class="w-[100%] h-[384px] object-cover rounded-lg">
+    <div class="absolute top-[50%] left-[50%] center-abs z-[2] w-[70%]">
+      <h4 class="font-bold text-white text-[48px] text-center leading-tight mb-10">You can contribute to provide a place for children with special needs!</h4>
+      <div class="flex justify-center">
+        <button class="rounded-md bg-[#F2C94C] text-black text-[16px] font-medium px-[32px] py-[16px] mr-10" (click)="openModal()">Join as a volunteer</button>
+        <button class="rounded-md bg-white text-black text-[16px] font-medium px-[32px] py-[16px] mr-10" routerLink="/donate">Donate</button>
+      </div>
+    </div>
+  </div>
+  <div class="flex items-center my-16">
+    <h4 class="font-medium text-[40px] min-w-fit mr-10">Our Events</h4>
+    <div class="h-[1px] bg-[#E5E5E5] w-[100%]"></div>
+  </div>
+  <div class="flex justify-between">
+    <div class="flex items-start cursor-pointer bg-[#F2C94C] p-10 rounded-xl w-[45%]">
+      <div class="mr-5">
+        <h1 class="font-medium text-[48px] leading-none">13</h1>
+        <h5 class="font-medium text-[16px]">APR</h5>
+      </div>
+      <div class="flex items-center">
+        <div class="w-[80%]">
+          <div class="flex items-center mb-3">
+            <h4 class="font-medium text-[16px] mr-5">NEXT EVENTS</h4>
+            <div class="h-[2px] bg-black w-[44px]"></div>
+          </div>
+          <h4 class="font-medium text-[28px] leading-tight">A day with our wonderful children</h4>
+        </div>
+        <img src="arrow.svg" alt="An image of an arrow" class="w-[50px] h-[50px]">
+      </div>
+    </div>
+    <div class="flex items-start cursor-pointer bg-[#F2C94C] p-10 rounded-xl w-[45%]">
+      <div class="mr-5">
+        <h1 class="font-medium text-[48px] leading-none">25</h1>
+        <h5 class="font-medium text-[16px]">APR</h5>
+      </div>
+      <div class="flex items-center">
+        <div class="w-[80%]">
+          <div class="flex items-center mb-3">
+            <h4 class="font-medium text-[16px] mr-5">NEXT EVENTS</h4>
+            <div class="h-[2px] bg-black w-[44px]"></div>
+          </div>
+          <h4 class="font-medium text-[28px] leading-tight">Seminar: Caring for children with autism</h4>
+        </div>
+        <img src="arrow.svg" alt="An image of an arrow" class="w-[50px] h-[50px]">
+      </div>
+    </div>
+  </div>
+</div>
+
+<fuf-footer></fuf-footer>

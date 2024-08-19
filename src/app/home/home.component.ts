@@ -5,13 +5,13 @@ import { FooterComponent } from "./../footer/footer.component";
 import { Title } from '@angular/platform-browser';
 import { BaseChartDirective } from 'ng2-charts';
 import { ChartData } from 'chart.js';
-import { MatDialog, MatDialogModule } from '@angular/material/dialog';
+import { MatDialog } from '@angular/material/dialog';
 import { VolunteerModalComponent } from '../volunteer-modal/volunteer-modal.component';
 
 @Component({
   selector: 'fuf-home',
   standalone: true,
-  imports: [RouterOutlet, HeaderComponent, FooterComponent, BaseChartDirective, RouterLink, MatDialogModule],
+  imports: [RouterOutlet, HeaderComponent, FooterComponent, BaseChartDirective, RouterLink],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
