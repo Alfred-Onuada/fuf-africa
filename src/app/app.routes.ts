@@ -6,6 +6,7 @@ import { DonationComponent } from './donation/donation.component';
 import { MediaComponent } from './media/media.component';
 import { WhatWeDoComponent } from './what-we-do/what-we-do.component';
 import { ProjectReadMoreComponent } from './project-read-more/project-read-more.component';
+import { EventReadMoreComponent } from './event-read-more/event-read-more.component';
 
 export const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -16,7 +17,8 @@ export const routes: Routes = [
   {path: 'what-we-do', component: WhatWeDoComponent},
 
   // the following should be dynamic
-  {path: 'mission-1k', component: ProjectReadMoreComponent},
+  {path: 'project-read-more', component: ProjectReadMoreComponent},
+  {path: 'events-read-more', component: EventReadMoreComponent},
   // the above should be dynamic
 
   {path: '**', redirectTo: ''}
