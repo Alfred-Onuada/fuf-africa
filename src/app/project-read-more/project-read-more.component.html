@@ -1,15 +1,18 @@
 <fuf-header></fuf-header>
 
-<div class="py-16 px-40">
-  <div class="flex items-start">
+<div class="py-10 md:py-16 px-5 md:px-40">
+  <div class="md:flex items-start">
     <div class="flex items-center mb-5">
       <div class="bg-[#1D2130] h-[2px] w-[72px] mr-[20px]"></div>
-    </div>
-    <div>
-      <h4 class="text-[#1D2130] font-bold text-[16px] mb-6 leading-[0]">
+      <h4 class="text-[#1D2130] font-bold text-[16px] leading-[0] md:hidden">
         OUR PROJECT
       </h4>
-      <h4 class="font-bold text-[56px] mb-5 text-[#1D2130]">
+    </div>
+    <div>
+      <h4 class="text-[#1D2130] font-bold text-[16px] mb-6 leading-[0] hidden md:block">
+        OUR PROJECT
+      </h4>
+      <h4 class="font-bold text-[30px] md:text-[56px] mb-5 text-[#1D2130]">
         Mission Smile 1k: Outdoor charity outreach
       </h4>
       <p class="mb-5 text-[16px] font-light text-[#1D2130]">
@@ -53,8 +56,8 @@
   </div>
 </div>
 
-<div class="px-40 py-20 bg-[#FCEDC6]">
-  <div class="grid grid-cols-2">
+<div class="px-5 md:px-40 py-10 md:py-20 bg-[#FCEDC6]">
+  <div class="md:grid grid-cols-2">
     <div class="flex items-start mb-10">
       <img src="edit-square.svg" alt="An icon" class="mr-5" />
       <div>
@@ -91,7 +94,7 @@
         </p>
       </div>
     </div>
-    <div class="flex items-start mb-10">
+    <div class="flex items-start">
       <img src="Discovery.svg" alt="An icon" class="mr-5" />
       <div>
         <h4 class="font-bold text-[22px] leading-none mb-2">
@@ -106,13 +109,13 @@
   </div>
 </div>
 
-<div class="px-16 py-12">
+<div class="px-5 md:px-16 md:py-12 py-5">
   <div class="flex items-center mb-5">
     <div class="bg-black h-[2px] w-[72px] mr-[20px]"></div>
     <h4 class="font-bold text-[16px] mt-0">MORE PROJECTS</h4>
   </div>
-  <div class="flex justify-center">
-    <div class="relative w-fit h-fit mr-16 overlay rounded-[20px]">
+  <div class="md:flex justify-center">
+    <div class="relative w-fit h-fit md:mr-16 md:mb-0 mb-3 overlay rounded-[20px]">
       <img
         src="left-1.JPG"
         class="w-[420px] h-[410px] rounded-[20px]"
@@ -134,7 +137,7 @@
         </button>
       </div>
     </div>
-    <div class="relative w-fit h-fit mr-16 overlay rounded-[20px]">
+    <div class="relative w-fit h-fit md:mr-16 md:mb-0 mb-3 overlay rounded-[20px]">
       <img
         src="excursion.jpeg"
         class="w-[420px] h-[410px] rounded-[20px]"
@@ -177,32 +180,14 @@
   </div>
 </div>
 
-<div class="px-16 py-12 justify-center items-center">
+<div class="px-5 md:px-16 md:py-12 py-5 justify-center items-center">
   <div class="relative w-[100%] h-fit overlay">
-    <img
-      src="left-1.JPG"
-      alt="An image of happy kids"
-      class="w-[100%] h-[384px] object-cover rounded-lg"
-    />
-    <div class="absolute top-[50%] left-[50%] center-abs z-[2] w-[70%]">
-      <h4
-        class="font-bold text-white text-[48px] text-center leading-tight mb-10"
-      >
-        You can contribute to provide a place for children with special needs!
-      </h4>
+    <img src="left-1.JPG" alt="An image of happy kids" class="w-[100%] h-[384px] object-cover rounded-lg">
+    <div class="absolute top-[50%] left-[50%] center-abs z-[2] w-[90%] md:w-[70%]">
+      <h4 class="font-bold text-white text-[25px] md:text-[48px] text-center leading-tight mb-10">You can contribute to provide a place for children with special needs!</h4>
       <div class="flex justify-center">
-        <button
-          class="rounded-md bg-[#F2C94C] text-black text-[16px] font-medium px-[32px] py-[16px] mr-10"
-          (click)="openModal()"
-        >
-          Join as a volunteer
-        </button>
-        <button
-          class="rounded-md bg-white text-black text-[16px] font-medium px-[32px] py-[16px] mr-10"
-          routerLink="/donate"
-        >
-          Donate
-        </button>
+        <button class="rounded-md bg-[#F2C94C] text-black text-[16px] font-medium px-[16px] md:px-[32px] py-[8px] md:py-[16px] mr-10" (click)="openModal()">Join as a volunteer</button>
+        <button class="rounded-md bg-white text-black text-[16px] font-medium px-[16px] md:px-[32px] py-[8px] md:py-[16px] mr-10" routerLink="/donate">Donate</button>
       </div>
     </div>
   </div>
