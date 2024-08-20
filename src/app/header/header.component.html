@@ -1,11 +1,21 @@
-<header class="sticky flex flex-row justify-between items-center py-5 px-16">
-  <h1 class="font-bold text-[24px]">FUF AFRICA</h1>
-  <div class="flex text-[#525560]">
-    <h4 routerLink="/" class="mx-6 font-medium text-[16px] nav-active t-shadow">Home</h4>
-    <h4 routerLink="/about-us" class="mx-6 font-medium text-[16px] t-shadow">About us</h4>
-    <h4 routerLink="/what-we-do" class="mx-6 font-medium text-[16px] t-shadow">What We Do</h4>
-    <h4 routerLink="/media" class="mx-6 font-medium text-[16px] t-shadow">Media</h4>
-    <h4 routerLink="/contact-us" class="mx-6 font-medium text-[16px] t-shadow">Contact</h4>
+<!-- this mocks the space the header is suppose to occupy since the header is position fixed -->
+<div class="h-[84px]"></div>
+<header class="fixed top-0 w-[100vw] h-fit z-10 bg-white md:flex flex-row justify-between items-center py-5 md:px-16 px-6 overflow-y-hidden"
+  [ngClass]="navIsOpen ? 'navOpen' : 'navClose'">
+  <div class="flex justify-between items-center">
+    <h1 class="font-bold text-[24px]">FUF AFRICA</h1>
+    @if (navIsOpen === true) {
+      <i class="text-[30px] md:hidden fa-solid fa-xmark" (click)="navIsOpen = false"></i>
+    } @else {
+      <i class="text-[30px] md:hidden fa-solid fa-bars" (click)="navIsOpen = true"></i>
+    }
+  </div>
+  <div class="md:flex text-[#525560]">
+    <h4 routerLink="/" class="md:mx-6 md:my-0 my-6 font-medium text-[16px] nav-active t-shadow">Home</h4>
+    <h4 routerLink="/about-us" class="md:mx-6 md:my-0 my-6 font-medium text-[16px] t-shadow">About us</h4>
+    <h4 routerLink="/what-we-do" class="md:mx-6 md:my-0 my-6 font-medium text-[16px] t-shadow">What We Do</h4>
+    <h4 routerLink="/media" class="md:mx-6 md:my-0 my-6 font-medium text-[16px] t-shadow">Media</h4>
+    <h4 routerLink="/contact-us" class="md:mx-6 md:my-0 my-6 font-medium text-[16px] t-shadow">Contact</h4>
   </div>
   <button 
     class="rounded-md bg-[#1D2130] text-white text-[16px] font-medium py-[10px] px-[32px] donate-btn"
