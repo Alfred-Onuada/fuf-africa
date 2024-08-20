@@ -3,11 +3,12 @@ import { HeaderComponent } from "../header/header.component";
 import { FooterComponent } from "../footer/footer.component";
 import { VolunteerModalComponent } from '../volunteer-modal/volunteer-modal.component';
 import { MatDialog } from '@angular/material/dialog';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'fuf-media',
   standalone: true,
-  imports: [HeaderComponent, FooterComponent],
+  imports: [HeaderComponent, FooterComponent, RouterLink],
   templateUrl: './media.component.html',
   styleUrl: './media.component.css'
 })

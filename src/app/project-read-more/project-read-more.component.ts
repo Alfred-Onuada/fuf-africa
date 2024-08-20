@@ -4,11 +4,12 @@ import { Title } from '@angular/platform-browser';
 import { VolunteerModalComponent } from '../volunteer-modal/volunteer-modal.component';
 import { FooterComponent } from "../footer/footer.component";
 import { HeaderComponent } from "../header/header.component";
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'fuf-project-read-more',
   standalone: true,
-  imports: [FooterComponent, HeaderComponent],
+  imports: [FooterComponent, HeaderComponent, RouterLink],
   templateUrl: './project-read-more.component.html',
   styleUrl: './project-read-more.component.css'
 })
