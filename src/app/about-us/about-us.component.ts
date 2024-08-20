@@ -4,11 +4,12 @@ import { HeaderComponent } from "../header/header.component";
 import { MatDialog } from '@angular/material/dialog';
 import { Title } from '@angular/platform-browser';
 import { VolunteerModalComponent } from '../volunteer-modal/volunteer-modal.component';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'fuf-about-us',
   standalone: true,
-  imports: [FooterComponent, HeaderComponent],
+  imports: [FooterComponent, HeaderComponent, RouterLink],
   templateUrl: './about-us.component.html',
   styleUrl: './about-us.component.css'
 })
