@@ -1,6 +1,6 @@
 import { NgClass } from '@angular/common';
 import { Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'fuf-header',
@@ -11,4 +11,13 @@ import { RouterLink } from '@angular/router';
 })
 export class HeaderComponent {
   navIsOpen = false;
+  currentPage = '';
+
+  constructor(
+    private router: Router
+  ) {
+    this.router.events.subscribe(() => {
+      this.currentPage = this.router.parseUrl(this.router.url).root.children['primary']?.segments[0]?.path || '/';
+    });
+  }
 }
